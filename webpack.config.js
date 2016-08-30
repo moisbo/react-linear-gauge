@@ -10,7 +10,7 @@ var HtmlWebpackPluginConfig = new HtmlWebpackPlugin({
 });
 
 module.exports = {
-	devtool: 'inline-source-map',
+	devtool: 'source-map',
 	entry: [
 		'./src/index.js'
 	],
