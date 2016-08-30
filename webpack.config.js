@@ -10,8 +10,9 @@ var HtmlWebpackPluginConfig = new HtmlWebpackPlugin({
 });
 
 module.exports = {
+	devtool: 'inline-source-map',
 	entry: [
-		__dirname, './src/index.js'
+		'./src/index.js'
 	],
 	output: {
 		path: __dirname + '/dist',
@@ -23,8 +24,11 @@ module.exports = {
 			{ test: /\.css$/, loader: "style-loader!css-loader"},
 		]
 	},
-	devtool: 'inline-source-map',
 	plugins: [
 		HtmlWebpackPluginConfig
 	],
+	devServer: {
+		inline:true,
+		port: 8008
+	}
 };
