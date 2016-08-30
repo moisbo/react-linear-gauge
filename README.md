@@ -1,3 +1,13 @@
+# React SVG Vertical Linear Gauge
+
+Vertical SVG Linear Gauge component, inspired by [react-svg-gauge](https://github.com/Reggino/react-svg-gauge) and [Linear gauge with gradient @CodePen](https://codepen.io/VicM/pen/NPGqwr)
+
+## Example
+
+![Sample LinearGauge](linear_gauge.gif)
+
+## Example Use
+```jsx
 import React, { Component } from 'react';
 import LinearGauge from './LinearGauge';
 
@@ -24,3 +34,4 @@ export default class App extends Component {
         )
     }
 }
+```
