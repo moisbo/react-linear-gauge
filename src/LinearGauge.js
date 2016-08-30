@@ -1,11 +1,5 @@
 import React, { Component } from 'react';
 
-const pointer = {
-    fill: 'black',
-    stroke: 'purple',
-    strokeWidth: 1
-}
-
 export default class LinearGauge extends Component {
      defaultProps = {
         GWidth: 100,
@@ -13,14 +7,12 @@ export default class LinearGauge extends Component {
         width: 0,
         height: 0,
         value: 0,
-        max:100,
-        min:0
+        max: 100,
+        min: 0
     }
 
     calcPos(){
-        var resultPos = (-this.props.value + this.props.max) * this.props.GHeight/this.props.max;
-        console.log(`val:${this.props.value}, resultPos: ${resultPos}`);
-        return resultPos
+        return (-this.props.value + this.props.max) * this.props.GHeight/this.props.max;
     }
 
     render() {
